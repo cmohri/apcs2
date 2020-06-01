@@ -1,0 +1,24 @@
+public class Find {
+
+    public static int search(int val, int[][] arr){
+	int i=0;
+	while(val>arr[i][i]){
+	    i++;
+        }
+	if(val==arr[i][i]){
+	    return arr[i][i];
+        }
+	for(int r=0; r<i; r++){
+	    if(val==arr[r][i]){
+		return arr[r][i];
+            }
+        }
+	for(int c=0; c<i; c++){
+	    if(val==arr[i][c]){
+		return arr[i][c];
+            }
+        }
+	return 0;
+    }
+
+}
