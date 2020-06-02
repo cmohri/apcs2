@@ -1,0 +1,13 @@
+Clara Mohri
+APCS2 Pd08
+HW11 -- Get On the Bus
+2018-03-01
+
+Knight's Tour Algorithm:
+
+Begin at the top left of the board
+1. Place knight at one of the available spots
+Continue until
+a. All spots have a knight
+b. Reach a knight where there is no available next spot
+   - Remove this knight, and repeat step 1.

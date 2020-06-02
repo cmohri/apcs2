@@ -1,0 +1,27 @@
+Clara Mohri
+APCS2 Pd08
+HW41 -- A Tree Grows in 251
+2018-04-30
+
+The minimum prerequisite information for reconstructing a binary tree is two representations of the tree out of post-order, pre-order, and in-order. The three represent the same traversal path of a tree, and simply different orders of printing out the root. One easy way to identify whether two lists will converge to one tree is whether there are the same number of items in each list.
+One list out of pre-, in-, and post-order is not enough to construct a tree because these could all independently represents several different trees.
+
+
+Combination: pre-order and in-order
+1. Identify the root of the entire tree, through looking at the first item in the pre order list.
+2. Identify where the root is in the in-order list. The left side (if any) of the root here will be on the left of the root in the tree, and the same goes for the right side.
+3. Identify the next item in the pre-order, and identify where it is in the in-order list. Everything to the left of this will be on the left side of the tree, and everything to the right will be on the right side of the tree.
+4. Continue step 3 until no more divisions can be made.
+
+Combination: in-order and post-order
+1. Identify the root of the entire tree through looking at the last item in the post-order list. 
+2. Identify where the root is in the in-order list. Thus, the in-order list can be broken down into the left and right side of the tree, (if any).
+3. Looking at the items of the post-order list that correspond to the left and right side of the tree according to the in-order division just made, identify the sub-roots (if any) by looking at the last items in the post-order list that correspond to the right and left side. 
+4. Continue steps 2 and 3 until no more divisions can be made
+
+Combination: pre-order and post-order
+1. Identify the root of the entire tree by looking at either the first item in the pre-order list or the last item in the post-order list.
+2. Look at the second to list item in the post-order list. If this item is not the second item in the pre-order list, then it is the root of the right subtree. Thus, the root of the left subtree is the second item in the pre-order list. 
+3. Identify where to divide the list of post-order by looking at where the root of the left subtree is in the post-order list. The left side of this division goes on the left side of the tree, and the right side goes on the right side of the tree. 
+4. Do the same to divide the pre-order list. 
+5. Continue steps 2-4 until no more divisions can be made.

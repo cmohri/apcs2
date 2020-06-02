@@ -1,0 +1,14 @@
+Clara Mohri
+APCS2 Pd08
+HW09 -- Yaaasss Queens
+2018-02-27
+
+The 2x2 case is not solvable, because on a 2x2 board, one queen can attack every remaining positiong on the board.
+
+The 3x3 case is not solvable either, because when just two queens are placed on the board, then either they can attack each other or they can attack every piece on the board. 
+
+Every case from 4x4 to 8x8 (and beyond) is, on the other hand solvable, and each has eight solutions. 
+Each case can be solved by making use of the L shaped move that a knight can make on a chess board. 
+If one starts on for example the bottom right of the chess board, and places a queen here, then the next spot to put a queen is for example up one and left three. This should be continued until one can no longer go to the right. If there are rows above, then one should continue, starting in the right most column in which a queen has not yet been placed.
+
+Otherwise, one could start not in the bottom right, but in the square one left of this, the bottom left, one square right of the bottom left, the top right, one left of the top right, the top left, or one right of the top left, and use the same methodology.

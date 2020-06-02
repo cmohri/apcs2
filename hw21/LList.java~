@@ -1,0 +1,30 @@
+/*
+Clara Mohri
+APCS2 Pd08
+2018-03-19
+HW21c -- Rockin' Through the Night
+*/
+
+public class LList implements List{
+    
+    public boolean add (String x){
+	return true;
+    }
+
+    public String get (int i){
+	return "H";
+    }
+
+    public String set (int i, String x){
+	return "h";
+    }
+
+    public int size(){
+	return 4;
+    }
+
+    public static void main (String[] args){
+
+    }
+
+}

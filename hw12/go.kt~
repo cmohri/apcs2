@@ -1,0 +1,14 @@
+Clara Mohri
+APCS2 Pd08
+HW12 -- __+3R|\/|1|\|4|_  1|_|_|\|3$$__
+2018-03-01
+
+Q0: 
+When I compile Demo.java, I notice that in my working directory not only does the file Demo.class appear, but so does the file Boardasaurus.class. Thus, I tried the command : $ java Boardasaurus. It did not work because there was no main method in Boardasaurus. When I added a main method to Boardasaurus and compiled Demo.java, Boardasaurus became executable. 
+
+Q1: 
+Command line arguments are processed as a String array. This is evidenced by the main method's parameter being String[] args, which refers to the parameters input in the terminal. It is also evidenced by the following line in the main method of Demo: 
+	n = Integer.parseInt( args[0] ); 
+	and, 
+       timeDelay = Integer.parseInt( args[1] );
+If I run Demo with the call: $ java Demo 10 400, then 10 will be the value of n, and timeDelay will be set to 400. 

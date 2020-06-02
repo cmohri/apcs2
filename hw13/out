@@ -1,0 +1,25 @@
+Script started on Sat Mar  3 16:01:34 2018
+[?1034hbash-3.2$ cp KnightTour.java ~/apcs2/hw13[C[C[C[C[C[C[C[C[C[Cls[Kcd hw13-knight/[C[C[C[C[C[C[C[C[C[Cls[K[K[Kjava KnightTour.[K 7
+[2J
+[0;0H -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1  0  0  0  0  0  0  0 -1 -1
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+
+bash-3.2$ scrip
+bash: scrip: command not found
+bash-3.2$ script
+Script started, output file is typescript
+[?1034hbash-3.2$ exit
+
+Script done, output file is typescript
+bash-3.2$ exit
+
+Script done on Sat Mar  3 16:02:18 2018

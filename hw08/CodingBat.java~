@@ -1,0 +1,31 @@
+public class CodingBat{
+
+    public static String changeXY(String str) {
+	int length= str.length();
+	if (length == 0){
+	    return str;
+	}
+	if (length == 1){
+	    if (str.equals("x")){
+		return "y";
+	    }
+	    else return str;
+	}
+	else {
+	    String a = str.substring(0, 1);
+	    if (a.equals("x")){
+		a = "y";
+	    }
+	    return a + changeXY(str.substring(1, length));
+	}
+		    
+
+    }
+
+    public static void main (String[] args){
+	System.out.println(changeXY("codex"));
+	System.out.println(changeXY("xxhixx"));
+	System.out.println(changeXY("xhixhix"));
+
+    }
+}

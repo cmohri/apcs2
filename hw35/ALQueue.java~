@@ -1,0 +1,19 @@
+public class ALQueue<T> implements Queue {
+
+    public T dequeue(){
+
+    }
+
+    public void enqueue(T x){
+
+    }
+
+    public boolean isEmpty(){
+
+    }
+
+    public T peekFront(){
+
+    }
+
+}

@@ -1,0 +1,20 @@
+Clara Mohri
+APCS2 Pd08
+HW14 -- Title? 
+2018-03-05
+
+Section Uno:
+Q1: From any starting position, can an open tour always be found? Explain.
+    First, it is important to mention that from any n less than or equal to four, there will be no solution for the knights tour, regardless of the starting position.
+    As for any n greater than four, then there are solutions for each starting position. This can be argued conceptually; because every single solution must visit every position, then we can visualize any starting point as simply a point that is part of the solution, from which moves can be made. 
+Q2: Same, but for closed tour.
+    Using our current code, a closed tour is not possible because a knight will only be placed on a position if there has not yet been a knight on this place. Thus, the starting point cannot be visited twice.
+Q3: How do you explain the increase in execution time as n increases?
+    The (tremendous) increase in execution time as n increases is due to the fact that n*n knights must be placed, and for every move, there are in the worst case 8 possibilities that our algorithm goes through. The computer could start at a given point, and make it through until n*n - 1 knights have been placed, only to realize that this solution does not work, 8 times. 
+Q4: Thoughts on optimization?
+    I was wondering if maybe there is a specific sequence for the possible next moves that the algorithm should make, as listed in the findTour method in a seemingly random order. Or, perhaps, priority could be given to next-moves that do not touch on borders, since there will probably be less possible moves to make from there than from a place that is not on borders and thus restricted.
+
+Section Deux:
+State your cleanest algo for finding your way out of the maze.
+
+Go through all of the possible moves that can be made, seeing if any works out. A move does not work if there is a wall. Use back-tracking if a dead end is reached. At every step, check to make sure if any of the possible moves to be made involve landing on the exit to the maze.

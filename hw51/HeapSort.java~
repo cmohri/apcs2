@@ -1,0 +1,20 @@
+/*
+Clara Mohri
+APCS2 Pd08
+HW51 -- Heapling Piles of Sordidness
+2018-05-21
+*/
+
+/**
+ *class HeapSort uses heap sort algorithm to sort an array of ints
+ * Algo: 
+ * 1. From left to right, promote element at current index, via swaps, to where it belongs
+ * 2. Repeat on next element, until collection is traversed
+ * 3. Grow sorted region from right to left
+ **/
+
+public class HeapSort{
+    
+    //takes in an unsorted array, and heapifies it
+    public static int[] heapify(int[] arr){
+	
